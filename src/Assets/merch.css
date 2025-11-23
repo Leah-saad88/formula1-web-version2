@@ -21,6 +21,6 @@
   to { opacity: 1; transform: translateX(0); }
 }
 .merch-card :hover{
-  background-color: black;
+  background-color: rgb(126, 15, 15);
 }
 
