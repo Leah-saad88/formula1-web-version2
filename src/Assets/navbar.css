@@ -1,0 +1,88 @@
+.groupy {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 21px; */
+  height: 5vw;
+  background-color: #0A0A0A;
+  color: #fff;
+  position: relative;  
+  z-index: 20; 
+}
+
+.menu-img{
+  width: 40px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  color: #E10600;
+  box-shadow: 0 0 8px #E10600;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 22px;
+}
+
+.line {
+  width: 28px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.line1.active {
+  transform: translateY(8px) rotate(45deg);
+}
+.line2.active {
+  opacity: 0;
+}
+.line3.active {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #0A0A0A;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    display: none;  
+  }
+
+  .groupy{
+    height: 20vw;
+  }
+
+  .links.open {
+    display: flex; 
+    padding: 10px;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
