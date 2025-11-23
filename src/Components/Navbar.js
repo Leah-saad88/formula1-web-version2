@@ -17,6 +17,9 @@ const Navbar = () => {
 
    return (
       <nav className="groupy">
+         <div className="head">
+         <h4>F1 insider </h4>
+         </div>
          <div className="burger" onClick={() => setOpen(!open)}>
             <img src={require("../Assets/menu.png")} className="menu-img" />
          </div>
