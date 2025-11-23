@@ -56,7 +56,7 @@ import d from "./d.jpeg";
 import e from "./e.webp";
 import f from "./f.jpeg";
 import leahandritadesign from "./leahandritadesign.jpg";
-
+import OIP from "./OIP.webp";
 
 export const Assets = {
   gifyy,
@@ -117,4 +117,5 @@ export const Assets = {
   e,
   f,
   leahandritadesign,
+  OIP,
 };
